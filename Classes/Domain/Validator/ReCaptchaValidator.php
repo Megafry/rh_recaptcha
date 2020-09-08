@@ -18,7 +18,7 @@ use In2code\Powermail\Domain\Model\Form;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
-use TYPO3\CMS\Fluid\Core\ViewHelper\Exception\InvalidVariableException;
+use TYPO3Fluid\Fluid\Core\ViewHelper\Exception\InvalidVariableException;
 
 /**
  * ReCaptchaValidator
@@ -27,13 +27,13 @@ class ReCaptchaValidator
 {
     /**
      * @var \RH\RhRecaptcha\Domain\Repository\FormRepository
-     * @inject
+     * @TYPO3\CMS\Extbase\Annotation\Inject
      */
     protected $formRepository;
 
     /**
      * @var \TYPO3\CMS\Extbase\Object\ObjectManagerInterface
-     * @inject
+     * @TYPO3\CMS\Extbase\Annotation\Inject
      */
     protected $objectManager;
 
